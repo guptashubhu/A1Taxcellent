@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tally Classes - A1Taxcellent</title>
+    <meta name="description" content="Professional Tally training classes with GST, accounting, and practical implementation. Expert trainers with industry experience.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e40af",
+                        secondary: "#1e3a8a",
+                        accent: "#f59e0b"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="assets/images/logo.png" alt="A1Taxcellent Logo" class="w-12 h-12 rounded-full">
+                    <span class="text-2xl font-bold text-gray-800">A1Taxcellent</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                    <a href="tally-classes.html" class="text-primary font-medium">Tally Classes</a>
+                    <a href="property-law.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Property Law</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary font-medium transition-colors">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Tally Accounting & GST Classes</h1>
+            <p class="text-xl opacity-90">Master Tally software with our comprehensive training programs</p>
+        </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Why Learn Tally?</h2>
+                    <p class="text-gray-600 mb-6 text-lg">Tally is India's most popular accounting software used by millions of businesses. Master Tally to boost your career prospects in accounting and finance.</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-chart-line text-primary mr-3 text-xl"></i>
+                            <span class="text-gray-700">High demand in job market</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-rupee-sign text-primary mr-3 text-xl"></i>
+                            <span class="text-gray-700">Better salary prospects</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-briefcase text-primary mr-3 text-xl"></i>
+                            <span class="text-gray-700">Multiple career opportunities</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-building text-primary mr-3 text-xl"></i>
+                            <span class="text-gray-700">Start your own practice</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#courses" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
+                            View Courses
+                        </a>
+                        <a href="contact.html" class="border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                            Enroll Now
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <img src="assets/images/tally-training.jpg" alt="Tally Training Classes" class="w-full rounded-xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Features -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Course Features</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-md text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                        <i class="fas fa-certificate text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Certification</h3>
+                    <p class="text-gray-600">Industry recognized certificate upon course completion</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-md text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                        <i class="fas fa-chalkboard-teacher text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Expert Trainers</h3>
+                    <p class="text-gray-600">10+ years experienced professionals as instructors</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-md text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                        <i class="fas fa-laptop-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Practical Training</h3>
+                    <p class="text-gray-600">Hands-on training with real business scenarios</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-md text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Placement Support</h3>
+                    <p class="text-gray-600">Career guidance and job placement assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Curriculum -->
+    <section id="courses" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Course Curriculum</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Basic Course -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Basic Tally Course</h3>
+                            <p class="text-gray-600">Duration: 1 Month</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Tally Installation & Setup</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Company Creation & Configuration</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Chart of Accounts</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Voucher Entry & Types</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Basic Reports</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Data Backup & Restore</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-2xl font-bold text-primary mb-4">₹3,999</div>
+                    <a href="contact.html" class="block text-center bg-primary text-white py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
+                        Enroll Now
+                    </a>
+                </div>
+
+                <!-- Advanced Course -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md border-2 border-primary">
+                    <div class="bg-primary text-white text-xs px-3 py-1 rounded-full inline-block mb-4">RECOMMENDED</div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Advanced Tally + GST</h3>
+                            <p class="text-gray-600">Duration: 2 Months</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">All Basic Course Topics</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">GST Configuration & Setup</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">GST Invoice Generation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">GSTR-1, GSTR-3B Filing</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Inventory Management</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Payroll & TDS</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Advanced Reports & Analysis</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-2xl font-bold text-primary mb-4">₹6,999</div>
+                    <a href="contact.html" class="block text-center bg-primary text-white py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
+                        Enroll Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Modes -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Training Options</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-md text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Classroom Training</h3>
+                    <p class="text-gray-600 mb-4">Interactive classroom sessions with hands-on practice</p>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• Face-to-face interaction</li>
+                        <li>• Immediate doubt clearing</li>
+                        <li>• Group discussions</li>
+                        <li>• Practical exercises</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-md text-center border-2 border-accent">
+                    <div class="bg-accent text-white text-xs px-2 py-1 rounded-full inline-block mb-4">POPULAR</div>
+                    <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                        <i class="fas fa-video text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Online Training</h3>
+                    <p class="text-gray-600 mb-4">Live online sessions with recorded classes for revision</p>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• Learn from home</li>
+                        <li>• Flexible timings</li>
+                        <li>• Recorded sessions</li>
+                        <li>• Digital materials</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-md text-center">
+                    <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                        <i class="fas fa-user text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">One-on-One</h3>
+                    <p class="text-gray-600 mb-4">Personalized training sessions tailored to your needs</p>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• Customized curriculum</li>
+                        <li>• Flexible schedule</li>
+                        <li>• Personal attention</li>
+                        <li>• Faster learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Success Stories -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Student Success Stories</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="assets/images/student1.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Priya Sharma</h4>
+                            <p class="text-gray-600 text-sm">Accountant at ABC Corp</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The Tally GST course helped me get my dream job as an accountant. The practical training was excellent and the instructors were very supportive."</p>
+                    <div class="flex text-accent mt-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="assets/images/student2.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Rahul Kumar</h4>
+                            <p class="text-gray-600 text-sm">Started own practice</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"After completing the advanced course, I started my own accounting practice. The knowledge I gained here has been invaluable for my business."</p>
+                    <div class="flex text-accent mt-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="assets/images/student3.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Anjali Patel</h4>
+                            <p class="text-gray-600 text-sm">Finance Executive</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The online training was very convenient for me as a working professional. I could learn at my own pace and the support was amazing."</p>
+                    <div class="flex text-accent mt-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Tally Journey?</h2>
+            <p class="text-xl mb-8 opacity-90">Join thousands of successful students who have transformed their careers with our Tally training.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">
+                    Enroll Now
+                </a>
+                <a href="tel:+919876543210" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+                    Call: +91 98765 43210
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="assets/images/logo.png" alt="A1Taxcellent Logo" class="w-10 h-10 rounded-full">
+                        <h3 class="text-xl font-bold">A1Taxcellent</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Professional tax and accounting consultancy services with excellence.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Courses</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#courses" class="text-gray-400 hover:text-white transition-colors">Basic Tally</a></li>
+                        <li><a href="#courses" class="text-gray-400 hover:text-white transition-colors">Advanced Tally</a></li>
+                        <li><a href="#courses" class="text-gray-400 hover:text-white transition-colors">Tally + GST</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <p><i class="fas fa-phone mr-2"></i>+91 98765 43210</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@a1taxcellent.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 A1Taxcellent. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
